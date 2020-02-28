@@ -62,7 +62,7 @@ public class JavaSetTest {
 	}
 	
 	@Test
-	public void emptyodesntContain() {
+	public void emptyDoesntContain() {
 		SetADT<String> empty = new JavaSet<>();
 		assertFalse(empty.contains("Q"));
 		
