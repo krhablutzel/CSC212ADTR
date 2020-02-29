@@ -81,9 +81,8 @@ public class JavaList<T> extends ListADT<T> {
 
 	@Override
 	public void addBack(T value) {
-		if (!inner.contains(value)) {
-			inner.add(value);		
-		}
+		// Fixed the bug where doesn't add repeated element
+		inner.add(value);		
 	}
 
 	@Override
